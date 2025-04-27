@@ -1,0 +1,58 @@
+---
+title: "Assignment 3"
+author: "Thomas Soupionis"
+date: "2025-03-11"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Packages
+```{r}
+library(tidyverse)
+```
+
+# Download Data
+```{r} 
+dow_data <- read_csv("../data/official_dowjones_data.csv")
+spx_data <- read_csv("../data/official_spx_data.csv")
+nasdaq_data <- read_csv("../data/official_nasdaq_data.csv")
+```
+
+# List all the columns/variables in the data
+```{r}
+names(spx_data)
+names(dow_data)
+names(nasdaq_data)
+```
+
+# Describing the Variables
+## Dependent Variable
+The dependent variable is the Return of the index. This variable measures the percentage change in the index value over a specified period. It represents the outcome of interest: whether an investment in the index fund yields a positive return over various time horizons.
+
+## Independent Variable(s)
+The key independent variable is the Time Horizon for the investment. This variable indicates the duration (e.g., 2 years, 5 years, 10 years) over which the return is calculated. It allows us to explore how the likelihood of a positive return changes with the length of the investment period. Additional independent variables might include market conditions, volatility measures, or economic indicators if available.
+
+# Renaming Both Column for Each Dataset
+```{r}
+dow_data <- rename(dow_data,
+                   Investment_Date = Date,
+                   Closing_Price = Close)
+nasdaq_data <- rename(nasdaq_data,
+                   Investment_Date = Date,
+                   Closing_Price = Close)
+spx_data <- rename(spx_data,
+                   Investment_Date = Date,
+                   Closing_Price = Close)
+```
+
+# Verify Column Name Changes
+```{r}
+names(dow_data)
+names(nasdaq_data)
+names(spx_data)
+```
+
+
