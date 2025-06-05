@@ -124,9 +124,9 @@ This repository examines how investment horizon affects historical returns in ma
 1. **Data Introduction/**  
    - Open `assignment3.Rmd` to see raw data loading, variable definitions, and column renaming.  
 2. **Data Preparation and Processing/**  
-   - View `data333_assignment3.Rmd` to understand how raw closing prices are cleaned, merged, and reshaped.  
+   - View `DATA-333-Midterm.Rmd` to understand how raw closing prices are cleaned, merged, and reshaped.  
 3. **Visualizing Distribution and Relationship/**  
-   - Examine `data333_assignment4.Rmd` for histograms, boxplots, and written interpretations of raw return distributions.  
+   - Examine `assignment4.Rmd` for histograms, boxplots, and written interpretations of raw return distributions.  
 4. **Statistical Analysis and Annualized Returns/**  
    - Read `final_research_report.Rmd` to review descriptive tables, ANOVA results, annualized return summaries, and a final takeaway comparing equity vs. cash-equivalent yields.  
 
